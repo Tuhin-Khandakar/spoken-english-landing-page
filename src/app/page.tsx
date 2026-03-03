@@ -43,7 +43,7 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-40 px-8 py-6 flex justify-between items-center backdrop-blur-md border-b border-white/5 bg-background/50">
         <div className="flex items-center gap-3">
-          <img src="/logo.png" alt="Markiety Logo" className="size-10 rounded-lg shadow-lg shadow-primary/20" />
+          <Image src="/logo.png" alt="Markiety Logo" width={48} height={48} className="rounded-xl shadow-lg shadow-primary/20" priority />
           <h1 className="text-xl font-bold tracking-tighter text-white uppercase italic">
             Markiety <span className="text-primary">English</span>
           </h1>
@@ -155,7 +155,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
           <div className="max-w-sm">
             <div className="flex items-center gap-3 mb-6">
-              <img src="/logo.png" alt="Markiety Logo" className="size-10 rounded-lg" />
+              <Image src="/logo.png" alt="Markiety Logo" width={40} height={40} className="rounded-lg" />
               <span className="text-xl font-extrabold tracking-tighter text-white">Markiety <span className="text-primary italic">English</span></span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">

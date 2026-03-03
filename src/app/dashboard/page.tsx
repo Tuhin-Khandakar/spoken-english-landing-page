@@ -1,7 +1,7 @@
-
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { GlassCard } from "@/components/ui/glass-card";
 import { Button } from "@/components/ui/button";
@@ -405,7 +405,7 @@ export default function StudentDashboard() {
         <div className="min-h-screen bg-background flex">
             <aside className="w-64 border-r border-white/5 bg-secondary/20 hidden md:flex flex-col p-5 gap-6">
                 <div className="flex items-center gap-3">
-                    <img src="/logo.png" alt="Logo" className="size-9 rounded-lg" />
+                    <Image src="/logo.png" alt="Logo" width={36} height={36} className="rounded-lg shadow-lg shadow-primary/20" />
                     <span className="text-lg font-extrabold tracking-tighter text-white italic">Markiety</span>
                 </div>
                 <div className="p-3 rounded-2xl bg-white/5 border border-white/10 flex items-center gap-3">
@@ -436,7 +436,7 @@ export default function StudentDashboard() {
                         <motion.div initial={{ x: -280 }} animate={{ x: 0 }} exit={{ x: -280 }} transition={{ type: "spring", damping: 25, stiffness: 300 }} className="absolute inset-y-0 left-0 w-72 bg-background border-r border-white/10 p-5 flex flex-col gap-6 shadow-2xl">
                             <div className="flex items-center justify-between">
                                 <div className="flex items-center gap-3">
-                                    <img src="/logo.png" alt="Logo" className="size-9 rounded-lg" />
+                                    <Image src="/logo.png" alt="Logo" width={36} height={36} className="rounded-lg" />
                                     <span className="text-lg font-extrabold tracking-tighter text-white italic">Markiety</span>
                                 </div>
                                 <button onClick={() => setIsSidebarOpen(false)} className="size-8 flex items-center justify-center text-white/40 hover:text-white"><X className="size-5" /></button>

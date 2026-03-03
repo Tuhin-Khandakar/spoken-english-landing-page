@@ -1,7 +1,7 @@
-
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { GlassCard } from "@/components/ui/glass-card";
 import { Button } from "@/components/ui/button";
@@ -74,7 +74,7 @@ export default function StudentLoginPage() {
             >
                 {/* Brand */}
                 <Link href="/" className="flex items-center justify-center gap-3 mb-10">
-                    <img src="/logo.png" alt="Logo" className="size-10 rounded-xl shadow-lg shadow-primary/30" />
+                    <Image src="/logo.png" alt="Logo" width={48} height={48} className="rounded-xl shadow-lg shadow-primary/30" />
                     <span className="text-2xl font-extrabold tracking-tighter text-white">
                         Markiety <span className="text-primary italic">English</span>
                     </span>

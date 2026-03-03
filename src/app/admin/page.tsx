@@ -1,7 +1,7 @@
-
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { GlassCard } from "@/components/ui/glass-card";
 import { Button } from "@/components/ui/button";
@@ -596,7 +596,7 @@ export default function AdminPortal() {
         <div className="min-h-screen bg-[#020202] flex items-center justify-center p-6">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="w-full max-w-sm">
                 <div className="flex items-center justify-center gap-3 mb-10">
-                    <img src="/logo.png" alt="Logo" className="size-12 rounded-xl" />
+                    <Image src="/logo.png" alt="Markiety Logo" width={48} height={48} className="rounded-xl" />
                     <span className="text-xl font-extrabold tracking-tighter text-white italic">Markiety Admin</span>
                 </div>
                 <GlassCard className="p-8">
@@ -641,7 +641,7 @@ export default function AdminPortal() {
             <nav className="h-14 border-b border-white/5 px-6 flex items-center justify-between sticky top-0 bg-black/90 backdrop-blur-md z-50">
                 <div className="flex items-center gap-6">
                     <div className="flex items-center gap-2">
-                        <img src="/logo.png" alt="Logo" className="size-8 rounded-lg" />
+                        <Image src="/logo.png" alt="Logo" width={32} height={32} className="rounded-lg" />
                         <span className="font-extrabold tracking-tighter italic text-sm">Markiety Admin</span>
                     </div>
                     <div className="hidden md:flex gap-1">
