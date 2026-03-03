@@ -141,10 +141,11 @@ export const CertificateTemplate = ({ studentName, courseName, date, certId, onC
                         {/* Verification Badge */}
                         <div className="absolute bottom-16 right-16 opacity-30 group-hover:opacity-100 transition-opacity">
                             <div className="flex flex-col items-end gap-1">
-                                <div className="p-1.5 border border-[#1a1a1a] rounded flex items-center gap-2">
+                                <a href={`https://markietyenglish.netlify.app/verify/${certId?.slice(0, 8)}`} target="_blank" rel="noopener noreferrer"
+                                    className="p-1.5 border border-[#1a1a1a] rounded flex items-center gap-2 hover:bg-black/5 transition-colors">
                                     <ShieldCheck className="size-3 text-primary" />
-                                    <span className="text-[7px] font-bold uppercase tracking-widest font-mono">Verify at: markiety.com/verify/{certId?.slice(0, 8)}</span>
-                                </div>
+                                    <span className="text-[7px] font-bold uppercase tracking-widest font-mono">Verify at: markietyenglish.netlify.app/verify/{certId?.slice(0, 8)}</span>
+                                </a>
                             </div>
                         </div>
                     </div>
